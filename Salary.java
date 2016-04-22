@@ -18,7 +18,7 @@ public class Salary {
 			if (sal < 0)
 				System.out.println("Вы в долгах");
 		} catch (InputMismatchException e) {
-			System.out.println("Вы что-то перепутали, введите вашу зарплату");
+			System.out.println("Вы что-то перепутали");
 			salary();
 		}
 
