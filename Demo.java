@@ -1,5 +1,6 @@
 package com.joyce.august.sourceit.dz4;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Demo {
@@ -18,7 +19,12 @@ public class Demo {
 				+ "\n2:Расчитать значение формулы\n3:Определить ваш уровень доходов");
 		
 		input = new Scanner(System.in);
-		int in = input.nextInt();
+		int in = 0;
+		try {
+			in = input.nextInt();
+		} catch (InputMismatchException e) {
+			System.out.println("Вы ошиблись");
+		}
 		
 		switch (in) {
 		case 1:
