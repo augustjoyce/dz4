@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Number {
 	private static Scanner scNumber;
+	private static double number;
 
 	public static void numFormule() {
 		scNumber = new Scanner(System.in);
 		System.out.println("Пожалуйста, введите трехзначное число " + "с пятью знаками после запятой");
 
-		double number = 0;
 		try {
 			number = scNumber.nextDouble();
 			String num = Double.toString(number);
@@ -32,7 +32,5 @@ public class Number {
 		}
 
 	}
-
-
 
 }

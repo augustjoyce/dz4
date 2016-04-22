@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class Salary {
 
 	private static Scanner scSalary;
+	private static int sal;
 
 	public static void salary() {
 
 		scSalary = new Scanner(System.in);
 		System.out.println("Пожалуйста, введите вашу месячную зарплату");
 
-		int sal = -1;
 		try {
 			sal = scSalary.nextInt();
 			if (sal < 0)
