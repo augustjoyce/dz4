@@ -14,9 +14,7 @@ public class Number {
 		try {
 			number = scNumber.nextDouble();
 			String num = Double.toString(number);
-			if (num.length() != 9) {
-				numFormule();
-			} else if (num.charAt(3) != '.') {
+			if (num.length() != 9 || num.charAt(3) != '.' ) {
 				numFormule();
 			} else {
 				int number2 = (int) (number * 100000);
